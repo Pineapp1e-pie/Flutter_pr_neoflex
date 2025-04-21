@@ -52,26 +52,34 @@ class _RegisterScreenState extends State<RegisterScreen> {
               // Email
               FormBuilderTextField(
                 name: 'email',
-                decoration: _inputDecoration('Email'),
+                decoration: InputDecoration(
+                  labelText: 'Email',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                ),
                 validator: FormBuilderValidators.compose([
                   FormBuilderValidators.required(errorText: 'Введите email'),
-                  FormBuilderValidators.email(errorText: 'Некорректный email'),
+                  FormBuilderValidators.email(errorText: 'Неверный формат email'),
                 ]),
               ),
-              const SizedBox(height: 16),
+              const SizedBox(height: 20),
 
               // Пароль
               FormBuilderTextField(
                 name: 'password',
                 obscureText: true,
-                decoration: _inputDecoration('Пароль'),
-                validator: FormBuilderValidators.compose([
-                  FormBuilderValidators.required(errorText: 'Введите пароль'),
-                  FormBuilderValidators.minLength(6,
-                      errorText: 'Минимум 6 символов'),
-                ]),
+                decoration: InputDecoration(
+                  labelText: 'Пароль',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                ),
+                validator: FormBuilderValidators.required(errorText: 'Введите пароль'),
               ),
-              const SizedBox(height: 32),
+              const SizedBox(height: 30),
 
               // Кнопка регистрации
               SizedBox(
@@ -99,7 +107,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 style: TextButton.styleFrom(
                   foregroundColor: const Color(0xFFD91E5B),
                 ),
-                child: const Text('Уже есть аккаут? Войти'),
+                child: const Text('Уже есть аккаунт? Войти'),
               ),
             ],
           ),

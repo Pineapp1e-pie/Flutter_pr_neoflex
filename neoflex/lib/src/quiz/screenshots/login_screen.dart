@@ -124,7 +124,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 // Ссылка на регистрацию
                 TextButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/register');
+                    Navigator.pushNamed(context, '/signup');
                   },
                   style: TextButton.styleFrom(
                     foregroundColor: const Color(0xFFD91E5B),
