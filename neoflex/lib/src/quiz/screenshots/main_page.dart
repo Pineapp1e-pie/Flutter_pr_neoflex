@@ -1,27 +1,42 @@
 import 'package:flutter/material.dart';
+import 'package:neoflex/src/quiz/screenshots/quiz.dart';
 
 import 'article.dart';
 
-class QuizHomePage extends StatelessWidget {
+class QuizHomePage extends  StatelessWidget {
+
   const QuizHomePage({Key? key}) : super(key: key);
+//   @override
+//   _QuizHomePageState createState() => _QuizHomePageState();
+// }
+//
+// class _QuizHomePageState extends State<QuizHomePage> {
+//   Map<String, String> _statuses = {};
+
+  // final int hearts;
+  // final String status;
+  //
+  // const QuizHomePage({
+  //   Key? key,
+  //   // required this.hearts,
+  //   required this.status,
+  // }) : super(key: key);
 
   // Пример данных
+
+
   final List<String> _articles = const [
     'Neoflex',
     'Учебный центр',
     'DevOps',
   ];
-  final List<String> _statuses = const [
-    'passed',
-    'failed',
-    'notStarted',
-  ];
+
 
   Color getStatusColor(String status) {
     switch (status) {
       case 'failed':
         return Color.fromRGBO(255, 101, 150, 1);
-      case 'pass':
+      case 'passed':
         return Color.fromRGBO(83, 228, 119, 1);
       default:
         return Colors.grey[300]!;
@@ -44,15 +59,15 @@ class QuizHomePage extends StatelessWidget {
                 children: [
 
                   IconButton(
-              icon: Image.asset(
-                'assets/img/default.png', // Замени на свой путь
-                width: 30,
-                height: 30,
-              ),
-              onPressed: () {
-                print('Изображение нажато!');
-              },
-            ),
+                    icon: Image.asset(
+                      'assets/img/default.png', // Замени на свой путь
+                      width: 30,
+                      height: 30,
+                    ),
+                    onPressed: () {
+                      print('Изображение нажато!');
+                    },
+                  ),
                   IconButton(
                     icon: const Icon(Icons.settings, color: Colors.white),
                     onPressed: () {},
@@ -79,16 +94,17 @@ class QuizHomePage extends StatelessWidget {
                         onPressed: () {},
                       ),
                       Positioned(
-                        top: 4,
-                        right: 4,
+                        top: 3,
+                        right: 0,
                         child: Container(
-                          padding: const EdgeInsets.all(4),
+                          padding: const EdgeInsets.all(3),
                           decoration: const BoxDecoration(
-                            color: Colors.red,
+                            color: Color.fromRGBO(204, 37, 91, 1),
                             shape: BoxShape.circle,
+
                           ),
                           child: const Text(
-                            '10',
+                            '10', // TODO getpoints?
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 10,
@@ -121,14 +137,19 @@ class QuizHomePage extends StatelessWidget {
                   children: [
                     TextSpan(
                       text: 'Зарабатывай ',
-                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Colors.white),
+                      style: TextStyle(fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.white),
                     ),
                     WidgetSpan(
-                      child: Icon(Icons.favorite, size: 16, color: Colors.white),
+                      child: Icon(
+                          Icons.favorite, size: 16, color: Colors.white),
                     ),
                     TextSpan(
                       text: ' и обменивай на мерч',
-                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Colors.white),
+                      style: TextStyle(fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.white),
                     ),
                   ],
                 ),
@@ -143,7 +164,7 @@ class QuizHomePage extends StatelessWidget {
                 separatorBuilder: (_, __) => const SizedBox(height: 24),
                 itemBuilder: (context, index) {
                   final title = _articles[index];
-                 final status = 'notStarted'; //TODO getStatus в тесте
+
                   return Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -163,17 +184,20 @@ class QuizHomePage extends StatelessWidget {
                           IconButton(
                             icon: const Icon(Icons.arrow_forward_ios, size: 16),
                             onPressed: () {
-                                Navigator.push(
+                              Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                builder: (context) => ArticleDetailPage(
-                                  articleKey:'article_$index', // Передай содержание статьи
-                                  title: title, // Передай заголовок статьи
+                                  builder: (context) =>
+                                      ArticleDetailPage(
+                                        articleKey: 'article_$index',
+                                        // Передай содержание статьи
+                                        title: title, // Передай заголовок статьи
+                                      ),
                                 ),
-                                ),
-                                );
-                                },
-                                ),],),
+                              );
+                            },
+                          ),
+                        ],),
 
                       const SizedBox(height: 4),
                       const Divider(thickness: 1),
@@ -189,18 +213,27 @@ class QuizHomePage extends StatelessWidget {
                           ),
 
 
-
-                  Container(
+                          Container(
                             width: 32,
                             height: 32,
                             decoration: BoxDecoration(
-                              color: getStatusColor(status),
+                              //color: getStatusColor(status),
+                              color: getStatusColor("failed"),
                               borderRadius: BorderRadius.circular(4),
                             ),
                             child: IconButton(
                               icon: const Icon(Icons.play_arrow, size: 16),
                               onPressed: () {
-                                // TODO: Навигация к экрану теста
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) =>
+                                        QuizFormPage(
+                                          articleKey: 'article_$index',
+                                          title: title,
+                                        ),
+                                  ),
+                                );
                               },
                             ),
                           ),
@@ -218,4 +251,5 @@ class QuizHomePage extends StatelessWidget {
       ),
     );
   }
+
 }

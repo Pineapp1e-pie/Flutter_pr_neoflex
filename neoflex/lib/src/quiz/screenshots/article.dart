@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart'; // Для rootBundle
+import 'package:flutter/services.dart';
+import 'package:neoflex/src/quiz/screenshots/quiz.dart'; // Для rootBundle
 
 /// Страница детального просмотра статьи
 class ArticleDetailPage extends StatelessWidget {
@@ -57,7 +58,15 @@ class ArticleDetailPage extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),),),
                   onPressed: () {
-                    // TODO: Навигация к квизу, передача соответствующего ключа теста
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => QuizFormPage(
+                          articleKey: articleKey,
+                          title: title,
+                        ),
+                      ),
+                    );
                   },
                   child: const Text('Перейти к квизу'),
 
