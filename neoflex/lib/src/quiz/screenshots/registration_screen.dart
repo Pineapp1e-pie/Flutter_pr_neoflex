@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 
+import 'database_helper.dart';
+
+
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
 
@@ -12,13 +15,13 @@ class RegisterScreen extends StatefulWidget {
 class _RegisterScreenState extends State<RegisterScreen> {
   final _formKey = GlobalKey<FormBuilderState>();
 
-  void _register() {
+  void _register() async {
     if (_formKey.currentState?.saveAndValidate() ?? false) {
       final formData = _formKey.currentState!.value;
       final email = formData['email'];
       final password = formData['password'];
 
-      // TODO: логика регистрации (вставка в базу данных)
+      await DatabaseHelper.instance.insertUser(email, password); // 💾 Сохраняем в БД
 
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Регистрация прошла успешно')),
@@ -27,6 +30,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
       Navigator.pop(context); // Возврат к экрану входа
     }
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -90,7 +94,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ),
               TextButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/');
+                  Navigator.pushNamed(context, '/login');
                 },
                 style: TextButton.styleFrom(
                   foregroundColor: const Color(0xFFD91E5B),

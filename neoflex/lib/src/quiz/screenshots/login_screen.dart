@@ -34,7 +34,7 @@ class _LoginScreenState extends State<LoginScreen> {
               action: SnackBarAction(
                 label: 'Зарегистрироваться',
                 onPressed: () {
-                  Navigator.pushNamed(context, '/register');
+                  Navigator.pushNamed(context, '/signup');
                 },
               ),
             ),

@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6186cb-6b29-4468-92d7-aefeb334f75f" name="Changes" comment="Экран входа , регистрации и сделал экран after_login просто что бы переход после входа куда-то был + картинку робота скачал" />
+    <list default="true" id="7f6186cb-6b29-4468-92d7-aefeb334f75f" name="Changes" comment="Экран входа , регистрации и сделал экран after_login просто что бы переход после входа куда-то был + картинку робота скачал">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/screens/after_login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/after_login.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/screens/database_helper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/database_helper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/screens/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/login_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/screens/registration_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/registration_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +51,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Google/AndroidStudio2024.2/device-explorer/Pixel 2 API 30/_/data/data/com.example.neoflex/databases/users.db-journal" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/neoflex/lib/main.dart" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -56,31 +65,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Flutter.Neoflex.executor": "Run",
-    "Flutter.neoflex.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "com.google.services.firebase.aqiPopupShown": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "изменения__кости",
-    "io.flutter.reload.alreadyRun": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/",
-    "settings.editor.selected.configurable": "dart.settings",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Flutter.Neoflex.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.neoflex.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;изменения__кости&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;dart.settings&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Flutter_pr_neoflex\neoflex\lib\src\settings" />
       <recent name="D:\Flutter_pr_neoflex\neoflex\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Flutter_pr_neoflex\neoflex\lib\src\quiz" />
       <recent name="D:\Flutter_pr_neoflex\neoflex\lib\src\screens" />
       <recent name="D:\Flutter_pr_neoflex\neoflex\assets\images" />
       <recent name="D:\Flutter_pr_neoflex\neoflex\lib\src" />

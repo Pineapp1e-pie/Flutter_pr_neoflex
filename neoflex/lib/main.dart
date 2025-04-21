@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:neoflex/src/screens/login_screen.dart';
-import 'package:neoflex/src/screens/registration_screen.dart';
-import 'package:neoflex/src/screens/database_helper.dart';
-import 'package:neoflex/src/screens/after_login.dart';
+import 'package:neoflex/src/quiz/screenshots/login_screen.dart';
+import 'package:neoflex/src/quiz/screenshots/registration_screen.dart';
+import 'package:neoflex/src/quiz/screenshots/database_helper.dart';
+import 'package:neoflex/src/quiz/screenshots/after_login.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/',
       routes: {
-        '/': (context) => const LoginScreen(),
-        '/quiz': (context) => const QuizScreen(),
-        '/register': (context) => const RegisterScreen(), // ← добавь это
+        '/login': (context) => const LoginScreen(),
+        '/quiz': (context) => const QuizHomePage(),
+        '/signup': (context) => const RegisterScreen(), // ← добавь это
       },
     );
   }
