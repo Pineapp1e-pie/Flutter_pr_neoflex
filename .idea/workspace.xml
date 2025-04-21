@@ -4,37 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6186cb-6b29-4468-92d7-aefeb334f75f" name="Changes" comment="Экран входа , регистрации и сделал экран after_login просто что бы переход после входа куда-то был + картинку робота скачал">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/.cmake/api/v1/reply/index-2025-04-20T23-06-00-0983.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/metadata_generation_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/metadata_generation_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/prefab_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/prefab_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/.cmake/api/v1/reply/index-2025-04-20T23-06-53-0595.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/configure_fingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/metadata_generation_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/metadata_generation_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/prefab_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/prefab_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/hash_key.txt" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/hash_key.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/.cmake/api/v1/reply/index-2025-04-20T23-07-06-0219.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/configure_fingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/metadata_generation_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/metadata_generation_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/prefab_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/prefab_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/.cmake/api/v1/reply/index-2025-04-20T23-07-16-0636.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/configure_fingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/metadata_generation_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/metadata_generation_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/prefab_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/prefab_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/login_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/registration_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/registration_screen.dart" afterDir="false" />
-    </list>
+    <list default="true" id="7f6186cb-6b29-4468-92d7-aefeb334f75f" name="Changes" comment="_" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +13,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\pahan\.android\avd\Pixel_4a_API_30.avd)]" />
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
       <GitPushTagMode>
@@ -98,7 +67,6 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;изменения__кости&quot;,
     &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/&quot;,
