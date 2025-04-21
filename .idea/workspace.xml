@@ -4,7 +4,41 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6186cb-6b29-4468-92d7-aefeb334f75f" name="Changes" comment="_" />
+    <list default="true" id="7f6186cb-6b29-4468-92d7-aefeb334f75f" name="Changes" comment="_">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Flutter_pr_neoflex.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A_glossy_3D_rocket_wi_0410181052_generate.blend1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/assets/articles/article_0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/assets/articles/article_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/assets/articles/article_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/assets/data/quiz_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/assets/img/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/assets/img/default_img_profile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/assets/img/heart_robot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/assets/img/neoflex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/assets/img/sad_robot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/ios/QuizHomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/article.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/main_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/quiz.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/звезда.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ракета.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A_glossy_3D_rocket_wi_0410181052_generate.blend" beforeDir="false" afterPath="$PROJECT_DIR$/A_glossy_3D_rocket_wi_0410181052_generate.blend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/after_login.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugins.cmake" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +56,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="изменения_кости" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,24 +90,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Flutter.Neoflex.executor&quot;: &quot;Run&quot;,
-    &quot;Flutter.neoflex.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;dart.settings&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Flutter.Neoflex.executor": "Run",
+    "Flutter.neoflex.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "Merging изменения__кости__merge",
+    "io.flutter.reload.alreadyRun": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/",
+    "settings.editor.selected.configurable": "dart.settings",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Flutter_pr_neoflex\neoflex\lib\src\settings" />
@@ -117,7 +152,23 @@
       <option name="project" value="LOCAL" />
       <updated>1745269053040</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="_">
+      <option name="closed" value="true" />
+      <created>1745272579268</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745272579268</updated>
+    </task>
+    <task id="LOCAL-00004" summary="_">
+      <option name="closed" value="true" />
+      <created>1745272586356</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745272586356</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,7 +197,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/quiz_articles" />
+                        <option value="изменения_кости" />
                       </list>
                     </value>
                   </entry>
@@ -160,7 +211,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Экран входа , регистрации и сделал экран after_login просто что бы переход после входа куда-то был + картинку робота скачал" />
-    <option name="LAST_COMMIT_MESSAGE" value="Экран входа , регистрации и сделал экран after_login просто что бы переход после входа куда-то был + картинку робота скачал" />
+    <MESSAGE value="_" />
+    <option name="LAST_COMMIT_MESSAGE" value="_" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
