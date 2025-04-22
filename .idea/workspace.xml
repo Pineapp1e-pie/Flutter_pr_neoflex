@@ -5,39 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f6186cb-6b29-4468-92d7-aefeb334f75f" name="Changes" comment="_">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Flutter_pr_neoflex.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A_glossy_3D_rocket_wi_0410181052_generate.blend1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neoflex/assets/articles/article_0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neoflex/assets/articles/article_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neoflex/assets/articles/article_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neoflex/assets/data/quiz_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neoflex/assets/img/default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neoflex/assets/img/default_img_profile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neoflex/assets/img/heart_robot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neoflex/assets/img/neoflex.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neoflex/assets/img/sad_robot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neoflex/ios/QuizHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/article.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/main_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/quiz.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/звезда.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ракета.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_glossy_3D_rocket_wi_0410181052_generate.blend" beforeDir="false" afterPath="$PROJECT_DIR$/A_glossy_3D_rocket_wi_0410181052_generate.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/after_login.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/article.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/article.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/quiz.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/quiz.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neoflex/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugins.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,10 +72,10 @@
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "Merging изменения__кости__merge",
+    "git-widget-placeholder": "изменения__кости__merge",
     "io.flutter.reload.alreadyRun": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/",
+    "last_opened_file_path": "D:/flutter/bin/cache/dart-sdk",
     "settings.editor.selected.configurable": "dart.settings",
     "show.migrate.to.gradle.popup": "false"
   }
