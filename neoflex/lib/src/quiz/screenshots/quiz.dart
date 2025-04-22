@@ -140,7 +140,8 @@ class _QuizFormPageState extends State<QuizFormPage> {
                       textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),),),
-                    onPressed: () => Navigator.popUntil(context, (route) => route.isFirst),
+                    onPressed: () {
+                      Navigator.pop(context);},
                     child: const Text('На главную'),
                   ),
                 ],

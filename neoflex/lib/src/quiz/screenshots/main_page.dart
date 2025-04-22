@@ -28,9 +28,9 @@ class _QuizHomePageState extends State<QuizHomePage> {
     final status = _statuses[articleKey] ?? '';
     switch (status) {
       case 'failed':
-        return const Color.fromRGBO(255, 101, 150, 50);
+        return const Color.fromRGBO(255, 101, 150, 0.50);
       case 'passed':
-        return const Color.fromRGBO(83, 228, 119, 50);
+        return const Color.fromRGBO(83, 228, 119, 0.50);
       default:
         return Colors.grey[300]!;
     }
