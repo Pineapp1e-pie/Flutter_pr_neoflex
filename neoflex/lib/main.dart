@@ -7,9 +7,12 @@ import 'package:neoflex/src/quiz/screenshots/main_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await DatabaseHelper.instance.database; // Инициализация БД
-  runApp(const MyApp());
+  final db = DatabaseHelper.instance;
+
+
+  runApp(MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -26,8 +29,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/login',
       routes: {
         '/login': (context) => const LoginScreen(),
-        '/quiz': (context) => const QuizHomePage(),
-        '/signup': (context) => const RegisterScreen(), // ← добавь это
+        '/quiz': (context) => QuizHomePage(),
+        '/signup': (context) => const RegisterScreen(),
+        // ← добавь это
       },
     );
   }

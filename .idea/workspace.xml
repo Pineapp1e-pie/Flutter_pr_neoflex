@@ -5,7 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f6186cb-6b29-4468-92d7-aefeb334f75f" name="Changes" comment="добавлен магазин">
+      <change afterPath="$PROJECT_DIR$/neoflex/assets/img/повербанк.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/assets/img/термоз.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/assets/img/чехол.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/product.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/615k3u32/arm64-v8a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/615k3u32/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/615k3u32/armeabi-v7a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/615k3u32/armeabi-v7a/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/615k3u32/x86/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/615k3u32/x86/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/615k3u32/x86_64/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/615k3u32/x86_64/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/arm64-v8a/.cmake/api/v1/reply/index-2025-04-21T22-05-37-0305.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/arm64-v8a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/arm64-v8a/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/arm64-v8a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/arm64-v8a/android_gradle_build_mini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/arm64-v8a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/arm64-v8a/metadata_generation_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/arm64-v8a/metadata_generation_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/arm64-v8a/prefab_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/arm64-v8a/prefab_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/armeabi-v7a/.cmake/api/v1/reply/index-2025-04-21T22-05-43-0466.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/armeabi-v7a/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/armeabi-v7a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/armeabi-v7a/android_gradle_build_mini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/armeabi-v7a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/armeabi-v7a/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/armeabi-v7a/metadata_generation_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/armeabi-v7a/metadata_generation_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/armeabi-v7a/prefab_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/armeabi-v7a/prefab_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/hash_key.txt" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/hash_key.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86/.cmake/api/v1/reply/index-2025-04-21T22-05-48-0466.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86/android_gradle_build_mini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86/metadata_generation_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86/metadata_generation_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86/prefab_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86/prefab_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86_64/.cmake/api/v1/reply/index-2025-04-21T22-05-51-0488.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86_64/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86_64/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86_64/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86_64/android_gradle_build_mini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86_64/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86_64/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86_64/metadata_generation_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86_64/metadata_generation_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86_64/prefab_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86_64/prefab_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/database_helper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/database_helper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/main_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/quiz.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/quiz.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/shop_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/shop_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,31 +97,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Flutter.Neoflex.executor": "Run",
-    "Flutter.neoflex.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "com.google.services.firebase.aqiPopupShown": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "изменения__кости__merge",
-    "io.flutter.reload.alreadyRun": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/flutter/bin/cache/dart-sdk",
-    "settings.editor.selected.configurable": "dart.settings",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Flutter.Neoflex.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.neoflex.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;изменения__кости__merge&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;dart.settings&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Flutter_pr_neoflex\neoflex\lib\src\settings" />
       <recent name="D:\Flutter_pr_neoflex\neoflex\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Flutter_pr_neoflex1\neoflex\assets\img" />
       <recent name="D:\Flutter_pr_neoflex\neoflex\lib\src\quiz" />
       <recent name="D:\Flutter_pr_neoflex\neoflex\lib\src\screens" />
       <recent name="D:\Flutter_pr_neoflex\neoflex\assets\images" />
@@ -153,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745348555401</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="добавлен магазин">
+      <option name="closed" value="true" />
+      <created>1745349029140</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745349029140</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

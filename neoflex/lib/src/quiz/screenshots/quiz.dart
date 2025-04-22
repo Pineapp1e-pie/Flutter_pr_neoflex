@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:neoflex/src/quiz/screenshots/main_page.dart';
 import 'package:neoflex/src/quiz/screenshots/article.dart';
+import 'package:neoflex/src/quiz/screenshots/database_helper.dart';
 
 class QuizFormPage extends StatefulWidget {
   final String articleKey;
@@ -31,13 +32,8 @@ class _QuizFormPageState extends State<QuizFormPage> {
       _questions = jsonData[widget.articleKey] ?? [];
     });
   }
-
-  void _submitQuiz() {
+  void _submitQuiz() async {
     int correctCount = 0;
-    String textRes;
-    String neoflexImg;
-    int hearts = 0;
-
     for (int i = 0; i < _questions.length; i++) {
       final correct = _questions[i]['correct'];
       if (_answers[i] == correct) {
@@ -45,24 +41,62 @@ class _QuizFormPageState extends State<QuizFormPage> {
       }
     }
 
-    final int percent = ((correctCount / _questions.length) * 100).round();
-    final String status;
-    if (percent <= 20) {
+    final db = await DatabaseHelper.instance.database;
+    // Получаем старое значение по articleKey
+    final List<Map<String, dynamic>> existing = await db.query(
+      'quiz_results',
+      where: 'articleKey = ?',
+      whereArgs: [widget.articleKey],
+      limit: 1,
+    );
+
+    int previousHearts = 0;
+    if (existing.isNotEmpty) {
+      previousHearts = existing.first['hearts'] ?? 0;
+    }
+
+    int delta = correctCount - previousHearts;
+    int addedHearts = delta > 0 ? delta : 0;
+
+    String status;
+    String textRes;
+    String neoflexImg;
+
+    if ((correctCount / _questions.length) * 100 <= 20) {
       textRes = "За что ты так со мной?";
       neoflexImg = "assets/img/sad_robot.png";
-      hearts = -1;
-      status="failed";
+      status = "failed";
+      addedHearts = -1;
     } else {
       textRes = "Был уверен, что не подведешь!";
       neoflexImg = "assets/img/heart_robot.png";
-      hearts = correctCount;
-      status="passed";
+      status = "passed";
     }
+
+    // Обновим общие очки
+    await DatabaseHelper.instance.saveQuizResult(addedHearts);
+
+    // Сохраним/обновим лучший результат
+    if (existing.isEmpty) {
+      await db.insert('quiz_results', {
+        'articleKey': widget.articleKey,
+        'hearts': correctCount,
+      });
+    } else if (correctCount > previousHearts) {
+      await db.update(
+        'quiz_results',
+        {'hearts': correctCount},
+        where: 'articleKey = ?',
+        whereArgs: [widget.articleKey],
+      );
+    }
+
     Navigator.pop(context, {
       'articleKey': widget.articleKey,
       'status': status,
-      'hearts': hearts,
+      'hearts': addedHearts,
     });
+
     showDialog(
       context: context,
       builder: (context) => Dialog(
@@ -72,22 +106,18 @@ class _QuizFormPageState extends State<QuizFormPage> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-
               Text(
                 '$correctCount из ${_questions.length}',
                 style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w600),
               ),
               const SizedBox(height: 10),
-
-
-
               // Иконка сердечек
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
 
                   Text(
-                    hearts >= 0 ? '+$hearts' : '-1',
+                    addedHearts >= 0 ? '+$addedHearts' : '-1',
                     style: const TextStyle(fontSize: 18),
                   ),
                   Icon(Icons.favorite,  color: Color.fromRGBO(204, 37, 91, 1) ),
@@ -140,15 +170,12 @@ class _QuizFormPageState extends State<QuizFormPage> {
                       textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),),),
-                    onPressed: () => Navigator.popUntil(context, (route) => route.isFirst),
+                    onPressed: () {
+                      Navigator.pop(context);},
                     child: const Text('На главную'),
                   ),
                 ],
               ),
-
-
-
-
               // Картинка
               Padding(
                 padding: const EdgeInsets.only(top: 20), // сдвинь вверх/вниз

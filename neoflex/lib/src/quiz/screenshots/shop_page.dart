@@ -1,75 +1,56 @@
 import 'package:flutter/material.dart';
+import 'package:neoflex/src/quiz/screenshots/database_helper.dart';
+import 'dart:io';
+import 'product.dart';
 
-class Product {
-  final String name;
-  final String description;
-  final int price; // в сердечках
-  final String imageUrl;
-
-  Product({
-    required this.name,
-    required this.description,
-    required this.price,
-    required this.imageUrl,
-  });
-}
-
-final List<Product> products = [
-  Product(
-    name: "Стикерпак Neoflex",
-    description: "Крутые стикеры для ноутбука",
-    price: 3,
-    imageUrl: "https://example.com/stickers.png",
-  ),
-  Product(
-    name: "Кепка Neoflex",
-    description: "Защищает от багов и солнца",
-    price: 7,
-    imageUrl: "https://example.com/cap.png",
-  ),
-  Product(
-    name: "Футболка Neoflex",
-    description: "Фирменная футболка за успехи в квизах",
-    price: 10,
-    imageUrl: "https://example.com/tshirt.png",
-  ),
-];
 
 class ShopPage extends StatefulWidget {
-  final int userPoints;
-  final Function(int) onPointsChanged;
-
-  const ShopPage({
-    super.key,
-    required this.userPoints,
-    required this.onPointsChanged,
-  });
+  const ShopPage({super.key});
 
   @override
   State<ShopPage> createState() => _ShopPageState();
 }
 
 class _ShopPageState extends State<ShopPage> {
-  late int points;
+  int _userPoints = 0;
+  List<Product> _products = [];
 
   @override
   void initState() {
     super.initState();
-    points = widget.userPoints;
+    _loadDataFromDatabase();
   }
 
-  void _buyItem(Product product) {
-    if (points >= product.price) {
+  Future<void> _loadDataFromDatabase() async {
+    final db = DatabaseHelper.instance;
+    final points = await db.getPoints();  // Получение сердец
+    final products = await db.getAllProducts();  // Получение списка продуктов
+
+    setState(() {
+      _userPoints = points;
+      _products = products;
+    });
+  }
+
+
+  Future<void> _buyItem(Product product) async {
+    if (_userPoints >= product.price && product.quantity > 0) {
+      final db = DatabaseHelper.instance;
+
       setState(() {
-        points -= product.price;
+        _userPoints -= product.price;
+        product.quantity--;
       });
-      widget.onPointsChanged(points);
+
+      await db.updatePoints(_userPoints);
+      await db.decreaseProductQuantity(product.id);
+
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text("Вы купили: ${product.name}!")),
       );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Не хватает сердец!")),
+        const SnackBar(content: Text("Не хватает сердец или товара нет в наличии!")),
       );
     }
   }
@@ -78,21 +59,27 @@ class _ShopPageState extends State<ShopPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Магазин наград — ❤️ $points"),
+        title: Text("Магазин — ❤️ $_userPoints"),
         backgroundColor: Colors.black87,
+        foregroundColor: Colors.white,
       ),
       body: ListView.builder(
-        itemCount: products.length,
+        itemCount: _products.length,
         itemBuilder: (context, index) {
-          final product = products[index];
-          final canBuy = points >= product.price;
+          final product = _products[index];
+          final canBuy = _userPoints >= product.price && product.quantity > 0;
 
           return Card(
             margin: const EdgeInsets.all(10),
             child: ListTile(
-              leading: Image.network(product.imageUrl, width: 50, height: 50, fit: BoxFit.cover),
+              leading: Image.asset(
+                product.imagePath,
+                width: 80,
+                height: 80,
+                fit: BoxFit.cover,
+              ),
               title: Text(product.name),
-              subtitle: Text("${product.description}\nЦена: ${product.price} ❤️"),
+              subtitle: Text("${product.description}\nЦена: ${product.price} ❤️\nОсталось: ${product.quantity}"),
               isThreeLine: true,
               trailing: ElevatedButton(
                 onPressed: canBuy ? () => _buyItem(product) : null,
