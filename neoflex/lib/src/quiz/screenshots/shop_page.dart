@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Product {
   final String name;
   final String description;
-  final int price; // в баллах!
+  final int price; // в сердечках
   final String imageUrl;
 
   Product({
@@ -14,41 +14,39 @@ class Product {
   });
 }
 
-
-
-
 final List<Product> products = [
-Product(
-name: "Стикерпак Neoflex",
-description: "Крутые стикеры для ноутбука",
-price: 3,
-imageUrl: "https://example.com/stickers.png",
-),
-Product(
-name: "Кепка Neoflex",
-description: "Защищает от багов и солнца",
-price: 7,
-imageUrl: "https://example.com/cap.png",
-),
-Product(
-name: "Футболка Neoflex",
-description: "Фирменная футболка за успехи в квизах",
-price: 10,
-imageUrl: "https://example.com/tshirt.png",
-),
+  Product(
+    name: "Стикерпак Neoflex",
+    description: "Крутые стикеры для ноутбука",
+    price: 3,
+    imageUrl: "https://example.com/stickers.png",
+  ),
+  Product(
+    name: "Кепка Neoflex",
+    description: "Защищает от багов и солнца",
+    price: 7,
+    imageUrl: "https://example.com/cap.png",
+  ),
+  Product(
+    name: "Футболка Neoflex",
+    description: "Фирменная футболка за успехи в квизах",
+    price: 10,
+    imageUrl: "https://example.com/tshirt.png",
+  ),
 ];
-
-
 
 class ShopPage extends StatefulWidget {
   final int userPoints;
   final Function(int) onPointsChanged;
 
-  const ShopPage({super.key, required this.userPoints, required this.onPointsChanged});
+  const ShopPage({
+    super.key,
+    required this.userPoints,
+    required this.onPointsChanged,
+  });
 
   @override
   State<ShopPage> createState() => _ShopPageState();
-
 }
 
 class _ShopPageState extends State<ShopPage> {
@@ -60,14 +58,18 @@ class _ShopPageState extends State<ShopPage> {
     points = widget.userPoints;
   }
 
-  void buyProduct(Product product) {
+  void _buyItem(Product product) {
     if (points >= product.price) {
       setState(() {
         points -= product.price;
       });
       widget.onPointsChanged(points);
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Вы купили: ${product.name}')),
+        SnackBar(content: Text("Вы купили: ${product.name}!")),
+      );
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Не хватает сердец!")),
       );
     }
   }
@@ -76,7 +78,7 @@ class _ShopPageState extends State<ShopPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Магазин наград — Баллы: $points"),
+        title: Text("Магазин наград — ❤️ $points"),
         backgroundColor: Colors.black87,
       ),
       body: ListView.builder(
@@ -88,12 +90,12 @@ class _ShopPageState extends State<ShopPage> {
           return Card(
             margin: const EdgeInsets.all(10),
             child: ListTile(
-              leading: Image.network(product.imageUrl, width: 50),
+              leading: Image.network(product.imageUrl, width: 50, height: 50, fit: BoxFit.cover),
               title: Text(product.name),
-              subtitle: Text("${product.description}\nЦена: ${product.price} баллов"),
+              subtitle: Text("${product.description}\nЦена: ${product.price} ❤️"),
               isThreeLine: true,
               trailing: ElevatedButton(
-                onPressed: canBuy ? () => buyProduct(product) : null,
+                onPressed: canBuy ? () => _buyItem(product) : null,
                 child: const Text("Купить"),
               ),
             ),
