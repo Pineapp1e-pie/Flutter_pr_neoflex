@@ -58,11 +58,11 @@ class _QuizFormPageState extends State<QuizFormPage> {
       hearts = correctCount;
       status="passed";
     }
-    // Navigator.pop(context); // Закрыть диалог
-    // Navigator.pop(context, {
-    // 'articleKey': widget.articleKey,
-    // 'status': status},);
-
+    Navigator.pop(context, {
+      'articleKey': widget.articleKey,
+      'status': status,
+      'hearts': hearts,
+    });
     showDialog(
       context: context,
       builder: (context) => Dialog(
