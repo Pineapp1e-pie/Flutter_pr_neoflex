@@ -3,41 +3,34 @@ import 'package:neoflex/src/quiz/screenshots/quiz.dart';
 
 import 'article.dart';
 
-class QuizHomePage extends  StatelessWidget {
-
+/// Главная страница теперь StatefulWidget, чтобы хранить текущее количество сердечек и статусы квизов
+class QuizHomePage extends StatefulWidget {
   const QuizHomePage({Key? key}) : super(key: key);
-//   @override
-//   _QuizHomePageState createState() => _QuizHomePageState();
-// }
-//
-// class _QuizHomePageState extends State<QuizHomePage> {
-//   Map<String, String> _statuses = {};
 
-  // final int hearts;
-  // final String status;
-  //
-  // const QuizHomePage({
-  //   Key? key,
-  //   // required this.hearts,
-  //   required this.status,
-  // }) : super(key: key);
+  @override
+  _QuizHomePageState createState() => _QuizHomePageState();
+}
 
-  // Пример данных
-
-
+class _QuizHomePageState extends State<QuizHomePage> {
+  // Список статей (ключи совпадают с JSON)
   final List<String> _articles = const [
     'Neoflex',
     'Учебный центр',
     'DevOps',
   ];
 
+  // Текущее число сердечек
+  int heartsCurrent = 0;
+  // Статусы пройденных/непройденных квизов, ключ — articleKey
+  final Map<String, String> _statuses = {};
 
-  Color getStatusColor(String status) {
+  Color getStatusColor(String articleKey) {
+    final status = _statuses[articleKey] ?? '';
     switch (status) {
       case 'failed':
-        return Color.fromRGBO(255, 101, 150, 1);
+        return const Color.fromRGBO(255, 101, 150, 50);
       case 'passed':
-        return Color.fromRGBO(83, 228, 119, 1);
+        return const Color.fromRGBO(83, 228, 119, 50);
       default:
         return Colors.grey[300]!;
     }
@@ -103,8 +96,8 @@ class QuizHomePage extends  StatelessWidget {
                             shape: BoxShape.circle,
 
                           ),
-                          child: const Text(
-                            '10', // TODO getpoints?
+                          child:  Text(
+                            "$heartsCurrent", // TODO getpoints?
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 10,
@@ -217,23 +210,28 @@ class QuizHomePage extends  StatelessWidget {
                             width: 32,
                             height: 32,
                             decoration: BoxDecoration(
-                              //color: getStatusColor(status),
-                              color: getStatusColor("failed"),
+                              color: getStatusColor('article_$index'),
+
                               borderRadius: BorderRadius.circular(4),
                             ),
                             child: IconButton(
                               icon: const Icon(Icons.play_arrow, size: 16),
-                              onPressed: () {
-                                Navigator.push(
+                              onPressed: () async {
+                                // Запуск квиза и ожидание результата
+                                final result = await Navigator.push<Map<String, dynamic>>(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) =>
-                                        QuizFormPage(
-                                          articleKey: 'article_$index',
-                                          title: title,
-                                        ),
+                                    builder: (_) => QuizFormPage(articleKey: 'article_$index', title: title),
                                   ),
                                 );
+                                if (result != null) {
+                                  setState(() {
+                                    // Обновляем общее число сердечек
+                                    heartsCurrent += result['hearts'] as int;
+                                    // Сохраняем статус данного квиза
+                                    _statuses[result['articleKey'] as String] = result['status'] as String;
+                                  });
+                                }
                               },
                             ),
                           ),
