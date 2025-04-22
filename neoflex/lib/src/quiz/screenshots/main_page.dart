@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:neoflex/src/quiz/screenshots/quiz.dart';
+import 'package:neoflex/src/quiz/screenshots/shop_page.dart'; // путь подставь свой
+
 
 import 'article.dart';
 
@@ -10,6 +12,7 @@ class QuizHomePage extends StatefulWidget {
   @override
   _QuizHomePageState createState() => _QuizHomePageState();
 }
+
 
 class _QuizHomePageState extends State<QuizHomePage> {
   // Список статей (ключи совпадают с JSON)
@@ -84,8 +87,26 @@ class _QuizHomePageState extends State<QuizHomePage> {
                     children: [
                       IconButton(
                         icon: const Icon(Icons.favorite, color: Colors.white),
-                        onPressed: () {},
+                        onPressed: () async {
+                          final updatedPoints = await Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ShopPage(
+                                userPoints: heartsCurrent,
+                                onPointsChanged: (newPoints) {
+                                  setState(() {
+                                    heartsCurrent = newPoints;
+                                  });
+                                },
+                              ),
+                            ),
+                          );
+                        },
                       ),
+
+
+
+
                       Positioned(
                         top: 3,
                         right: 0,

@@ -171,15 +171,8 @@ class _QuizFormPageState extends State<QuizFormPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromRGBO(41, 49, 52, 1),
-        title: Text('Квиз: ${widget.title}', style: const TextStyle(color: Colors.white)),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: Colors.white),
-          onPressed: () {
-            Navigator.popUntil(context, (route) => route.isFirst);
-          },
-        ),
-      ),
+          backgroundColor: const Color.fromRGBO(41, 49, 52, 1),
+          title: Text('Квиз: ${widget.title}',style: const TextStyle(color: Colors.white))),
       backgroundColor: Colors.white,
       body: _questions.isEmpty
           ? const Center(child: CircularProgressIndicator())
