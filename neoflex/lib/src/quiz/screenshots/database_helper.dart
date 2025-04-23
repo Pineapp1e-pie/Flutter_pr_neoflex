@@ -74,7 +74,7 @@ class DatabaseHelper {
       'quantity': 3
     });
     await db.insert('products', {
-      'name': 'Термоз Neoflex',
+      'name': 'Термос Neoflex',
       'description': '',
       'price': 10,
       'imagePath': 'assets/img/термоз.png',
