@@ -176,19 +176,47 @@ class _QuizHomePageState extends State<QuizHomePage> {
                           ),
                           IconButton(
                             icon: const Icon(Icons.arrow_forward_ios, size: 16),
+                            // onPressed: () {
+                            //   Navigator.push(
+                            //     context,
+                            //     MaterialPageRoute(
+                            //       builder: (context) =>
+                            //           ArticleDetailPage(
+                            //             articleKey: 'article_$index',
+                            //             // Передай содержание статьи
+                            //             title: title, // Передай заголовок статьи
+                            //           ),
+                            //     ),
+                            //   );
+                            // },
+
                             onPressed: () {
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(
-                                  builder: (context) =>
+                                PageRouteBuilder(
+                                  pageBuilder: (context, animation, secondaryAnimation) =>
                                       ArticleDetailPage(
                                         articleKey: 'article_$index',
-                                        // Передай содержание статьи
-                                        title: title, // Передай заголовок статьи
+                                        title: title,
                                       ),
+                                  transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                                    const begin = Offset(1.0, 0.0); // Слева направо
+                                    const end = Offset.zero;
+                                    const curve = Curves.ease;
+
+                                    final tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+                                    final offsetAnimation = animation.drive(tween);
+
+                                    return SlideTransition(
+                                      position: offsetAnimation,
+                                      child: child,
+                                    );
+                                  },
                                 ),
                               );
                             },
+
+
                           ),
                         ],),
 
@@ -233,6 +261,7 @@ class _QuizHomePageState extends State<QuizHomePage> {
                                   });
                                 }
                               },
+
                             ),
                           ),
                         ],

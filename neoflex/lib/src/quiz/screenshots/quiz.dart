@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:neoflex/src/quiz/screenshots/main_page.dart';
@@ -17,6 +18,7 @@ class QuizFormPage extends StatefulWidget {
 class _QuizFormPageState extends State<QuizFormPage> {
   List<dynamic> _questions = [];
   final Map<int, int?> _answers = {};
+  AudioPlayer _audioPlayer = AudioPlayer();
 
   @override
   void initState() {
@@ -32,7 +34,7 @@ class _QuizFormPageState extends State<QuizFormPage> {
     });
   }
 
-  void _submitQuiz() {
+  Future<void> _submitQuiz() async {
     int correctCount = 0;
     String textRes;
     String neoflexImg;
@@ -52,17 +54,25 @@ class _QuizFormPageState extends State<QuizFormPage> {
       neoflexImg = "assets/img/sad_robot.png";
       hearts = -1;
       status="failed";
+
+        _audioPlayer.play(AssetSource('sounds/fail.mp3'), volume: 0.8) ; // ✅ Remove "assets/" prefix
+
     } else {
       textRes = "Был уверен, что не подведешь!";
       neoflexImg = "assets/img/heart_robot.png";
       hearts = correctCount;
       status="passed";
+
+        _audioPlayer.play(AssetSource('sounds/pass.mp3'), volume:0.8) ;
+
     }
     Navigator.pop(context, {
       'articleKey': widget.articleKey,
       'status': status,
       'hearts': hearts,
     });
+
+
     showDialog(
       context: context,
       builder: (context) => Dialog(
@@ -78,8 +88,6 @@ class _QuizFormPageState extends State<QuizFormPage> {
                 style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w600),
               ),
               const SizedBox(height: 10),
-
-
 
               // Иконка сердечек
               Row(
@@ -146,9 +154,6 @@ class _QuizFormPageState extends State<QuizFormPage> {
                   ),
                 ],
               ),
-
-
-
 
               // Картинка
               Padding(
@@ -231,3 +236,4 @@ class _QuizFormPageState extends State<QuizFormPage> {
     );
   }
 }
+

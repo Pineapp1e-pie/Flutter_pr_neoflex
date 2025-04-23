@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:neoflex/src/quiz/screenshots/quiz.dart'; // Для rootBundle
 
-/// Страница детального просмотра статьи
+
 class ArticleDetailPage extends StatelessWidget {
-  /// Ключ статьи, соответствует имени файла без расширения
+
   final String articleKey;
   final String title;
 
@@ -67,7 +67,3 @@ class ArticleDetailPage extends StatelessWidget {
   }
 }
 
-/// В pubspec.yaml необходимо указать:
-/// flutter:
-///   assets:
-///     - assets/articles/
