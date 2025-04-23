@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:neoflex/src/quiz/screenshots/database_helper.dart';
 import 'dart:io';
 import 'product.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 
 class ShopPage extends StatefulWidget {
@@ -13,6 +14,7 @@ class ShopPage extends StatefulWidget {
 
 class _ShopPageState extends State<ShopPage> {
   int _userPoints = 0;
+  String _email="";
   List<Product> _products = [];
 
   @override
@@ -22,11 +24,21 @@ class _ShopPageState extends State<ShopPage> {
   }
 
   Future<void> _loadDataFromDatabase() async {
+    final prefs = await SharedPreferences.getInstance();
+    final email = prefs.getString('email'); // получаем email
+
+    if (email == null) {
+      // если email не найден — можно что-то показать или выйти
+      print('Email не найден. Пользователь не авторизован.');
+      return;
+    }
+
     final db = DatabaseHelper.instance;
-    final points = await db.getPoints();  // Получение сердец
-    final products = await db.getAllProducts();  // Получение списка продуктов
+    int points = await db.getPoints(email);
+    final products = await db.getAllProducts();// передаем email в запрос
 
     setState(() {
+      _email =email;
       _userPoints = points;
       _products = products;
     });
@@ -42,7 +54,7 @@ class _ShopPageState extends State<ShopPage> {
         product.quantity--;
       });
 
-      await db.updatePoints(_userPoints);
+      await db.updatePoints(_email, _userPoints);
       await db.decreaseProductQuantity(product.id);
 
       ScaffoldMessenger.of(context).showSnackBar(

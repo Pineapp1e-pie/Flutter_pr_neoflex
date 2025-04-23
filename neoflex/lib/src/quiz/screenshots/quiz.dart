@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:neoflex/src/quiz/screenshots/main_page.dart';
 import 'package:neoflex/src/quiz/screenshots/article.dart';
 import 'package:neoflex/src/quiz/screenshots/database_helper.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class QuizFormPage extends StatefulWidget {
   final String articleKey;
@@ -18,11 +19,14 @@ class QuizFormPage extends StatefulWidget {
 class _QuizFormPageState extends State<QuizFormPage> {
   List<dynamic> _questions = [];
   final Map<int, int?> _answers = {};
+  String _email ="";
+  int? _userId;
 
   @override
   void initState() {
     super.initState();
     _loadQuestions();
+    _loadDataFromDatabase();
   }
 
   Future<void> _loadQuestions() async {
@@ -32,7 +36,32 @@ class _QuizFormPageState extends State<QuizFormPage> {
       _questions = jsonData[widget.articleKey] ?? [];
     });
   }
+  Future<void> _loadDataFromDatabase() async {
+    final prefs = await SharedPreferences.getInstance();
+    final email = prefs.getString('email');
+    if (email == null) return;// получаем email
+    final db = DatabaseHelper.instance;
+    final List<Map<String, dynamic>> users = await db.query(
+      'users',
+      where: 'email = ?',
+      whereArgs: [email],
+      limit: 1,
+    );
+    if (users.isNotEmpty) {
+      final userId = users.first['id'];
+      print('User found: id = $userId');
+    } else {
+      print('No user found for email $_email');
+    }
+    setState(() {
+      _email =email!;
+      _userId = users.first['id'];
+    });
+  }
   void _submitQuiz() async {
+
+    if (_userId == null) return; // Перенесено в начало
+
     int correctCount = 0;
     for (int i = 0; i < _questions.length; i++) {
       final correct = _questions[i]['correct'];
@@ -45,10 +74,12 @@ class _QuizFormPageState extends State<QuizFormPage> {
     // Получаем старое значение по articleKey
     final List<Map<String, dynamic>> existing = await db.query(
       'quiz_results',
-      where: 'articleKey = ?',
-      whereArgs: [widget.articleKey],
+      where: 'articleKey = ? AND user_id = ?',
+      whereArgs: [widget.articleKey, _userId],
       limit: 1,
     );
+
+
 
     int previousHearts = 0;
     if (existing.isNotEmpty) {
@@ -74,20 +105,27 @@ class _QuizFormPageState extends State<QuizFormPage> {
     }
 
     // Обновим общие очки
-    await DatabaseHelper.instance.saveQuizResult(addedHearts);
+    await DatabaseHelper.instance.saveQuizResult(_email,addedHearts);
+
+    final userId = _userId;
+    if (userId == null) return; // или покажи ошибку
+
 
     // Сохраним/обновим лучший результат
     if (existing.isEmpty) {
       await db.insert('quiz_results', {
+        'user_id': userId,  // Сохраняем user_id
         'articleKey': widget.articleKey,
         'hearts': correctCount,
       });
+
+
     } else if (correctCount > previousHearts) {
       await db.update(
         'quiz_results',
         {'hearts': correctCount},
-        where: 'articleKey = ?',
-        whereArgs: [widget.articleKey],
+        where: 'user_id = ? AND articleKey = ?',
+        whereArgs: [userId, widget.articleKey],
       );
     }
 

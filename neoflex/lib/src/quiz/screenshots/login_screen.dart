@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
-
 import 'database_helper.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -41,7 +41,8 @@ class _LoginScreenState extends State<LoginScreen> {
           );
           return;
         }
-
+        final prefs = await SharedPreferences.getInstance();
+        await prefs.setString('email', email);
         if (!mounted) return;
         Navigator.pushReplacementNamed(context, '/quiz');
       } finally {

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:neoflex/src/quiz/screenshots/quiz.dart';
 import 'package:neoflex/src/quiz/screenshots/shop_page.dart';
-import 'package:neoflex/src/quiz/screenshots/database_helper.dart';// путь подставь свой
+import 'package:neoflex/src/quiz/screenshots/database_helper.dart';
+import 'package:shared_preferences/shared_preferences.dart';// путь подставь свой
 
 
 import 'article.dart';
@@ -21,8 +22,6 @@ class _QuizHomePageState extends State<QuizHomePage> {
     _loadDataFromDatabase();
   }
 
-
-
   int heartsCurrent=0;
   // Список статей (ключи совпадают с JSON)
   final List<String> _articles = const [
@@ -33,8 +32,13 @@ class _QuizHomePageState extends State<QuizHomePage> {
 
   // Текущее число сердечек
   Future<void> _loadDataFromDatabase() async {
+    final prefs = await SharedPreferences.getInstance();
+    final user_id = prefs.getString('user_id'); // получаем email
+
+
     final db = DatabaseHelper.instance;
-    int  points= await db.getPoints();
+    int points = await db.getPoints(user_id!); // передаем email в запрос
+
     setState(() {
       heartsCurrent = points;
     });

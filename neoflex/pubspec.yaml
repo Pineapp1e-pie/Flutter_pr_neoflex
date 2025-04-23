@@ -14,7 +14,8 @@ dependencies:
   flutter_form_builder: ^10.0.1  # Последняя стабильная версия
   form_builder_validators: ^11.1.2
   sqflite: ^2.3.0
-  path: ^1.8.3  # Рабочая версия для Flutter 3.x
+  path: ^1.8.3
+  shared_preferences: ^2.2.2
 
 
   cupertino_icons: ^1.0.8
