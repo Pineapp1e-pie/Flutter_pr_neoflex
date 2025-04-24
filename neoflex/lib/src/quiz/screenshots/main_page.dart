@@ -264,8 +264,7 @@ class _QuizHomePageState extends State<QuizHomePage> {
                               ),
                               child: IconButton(
                                 icon: const Icon(Icons.play_arrow, size: 16),
-                                onPressed: _statuses['article_$index'] == 'passed'
-                                  ? null : () async {
+                                onPressed: () async {
                                   // Запуск квиза и ожидание результата
                                   final result = await Navigator.push<Map<String, dynamic>>(
                                     context,

@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f6186cb-6b29-4468-92d7-aefeb334f75f" name="Changes" comment="Нельзя теперь одинаковые почты иметь и кнопка блокируется при прохождении 5 из 5">
-      <change afterPath="$PROJECT_DIR$/neoflex/assets/img/блокнот_ручка.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/appInsightsSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/assets/images/robot.png" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/assets/img/robot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/assets/img/повербанк.png" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/assets/img/колонка.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/assets/img/термоз.png" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/assets/img/термос.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/database_helper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/data/database_helper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/login_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/main_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/product.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/data/product.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/quiz.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/quiz.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/registration_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/registration_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/shop_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/shop_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugins.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,25 +66,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Flutter.Neoflex.executor&quot;: &quot;Run&quot;,
-    &quot;Flutter.neoflex.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;почти-финал&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;dart.settings&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Flutter.Neoflex.executor": "Run",
+    "Flutter.neoflex.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "io.flutter.reload.alreadyRun": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "build.tools",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Flutter_pr_neoflex\neoflex\lib\src\settings" />
