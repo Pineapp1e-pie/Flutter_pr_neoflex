@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7f6186cb-6b29-4468-92d7-aefeb334f75f" name="Changes" comment="Экран входа , регистрации и сделал экран after_login просто что бы переход после входа куда-то был + картинку робота скачал">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/.cmake/api/v1/query/client-agp/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/.cmake/api/v1/query/client-agp/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/.cmake/api/v1/query/client-agp/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/.cmake/api/v1/reply/cache-v2-b353eef664e408ec9c32.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/.cmake/api/v1/reply/cmakeFiles-v1-b9fa6972f59b1018e107.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/.cmake/api/v1/reply/codemodel-v2-ab8f2723a4182248db70.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/.cmake/api/v1/reply/index-2025-04-18T11-47-31-0788.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/additional_project_files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/android_gradle_build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/android_gradle_build_mini.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/build_file_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/metadata_generation_command.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/prefab_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/arm64-v8a/symbol_folder_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/.cmake/api/v1/query/client-agp/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/.cmake/api/v1/query/client-agp/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/.cmake/api/v1/query/client-agp/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/.cmake/api/v1/reply/cache-v2-6302ccbecfd1bb7a5f40.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/.cmake/api/v1/reply/cmakeFiles-v1-e98dc5131f033591edbc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/.cmake/api/v1/reply/codemodel-v2-b3fb2bb1193da6792395.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/.cmake/api/v1/reply/index-2025-04-18T11-48-31-0846.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/additional_project_files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/android_gradle_build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/android_gradle_build_mini.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/build_file_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/configure_fingerprint.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/metadata_generation_command.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/prefab_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/armeabi-v7a/symbol_folder_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/hash_key.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/.cmake/api/v1/query/client-agp/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/.cmake/api/v1/query/client-agp/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/.cmake/api/v1/query/client-agp/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/.cmake/api/v1/reply/cache-v2-c1a70f97b61ca880c37a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/.cmake/api/v1/reply/cmakeFiles-v1-d9b911406d8521a164ce.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/.cmake/api/v1/reply/codemodel-v2-d1623cb9bcff0b0899ac.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/.cmake/api/v1/reply/index-2025-04-18T11-48-35-0234.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/CMakeFiles/3.22.1-g37088a8-dirty/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/additional_project_files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/android_gradle_build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/android_gradle_build_mini.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/build_file_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/configure_fingerprint.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/metadata_generation_command.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/prefab_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86/symbol_folder_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/.cmake/api/v1/query/client-agp/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/.cmake/api/v1/query/client-agp/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/.cmake/api/v1/query/client-agp/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/.cmake/api/v1/reply/cache-v2-27836322f5e74c588840.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/.cmake/api/v1/reply/cmakeFiles-v1-8b6230968e344d16ec76.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/.cmake/api/v1/reply/codemodel-v2-f39db0c172c06d9298d0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/.cmake/api/v1/reply/index-2025-04-18T11-48-38-0360.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/additional_project_files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/android_gradle_build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/android_gradle_build_mini.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/build_file_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/configure_fingerprint.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/metadata_generation_command.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/prefab_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/3e2f105k/x86_64/symbol_folder_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/.cmake/api/v1/query/client-agp/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/.cmake/api/v1/query/client-agp/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/.cmake/api/v1/query/client-agp/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/.cmake/api/v1/reply/cache-v2-52900fd4c481e185a2af.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/.cmake/api/v1/reply/cmakeFiles-v1-9dae5299705416a5bf70.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/.cmake/api/v1/reply/codemodel-v2-7744ea23037299304110.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/.cmake/api/v1/reply/index-2025-04-20T23-06-00-0983.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/additional_project_files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/android_gradle_build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/android_gradle_build_mini.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/build_file_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/metadata_generation_command.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/prefab_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/arm64-v8a/symbol_folder_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/.cmake/api/v1/query/client-agp/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/.cmake/api/v1/query/client-agp/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/.cmake/api/v1/query/client-agp/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/.cmake/api/v1/reply/cache-v2-3b11d0da8bff56eeaf98.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/.cmake/api/v1/reply/cmakeFiles-v1-d0aa0f636f1c7ad1571d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/.cmake/api/v1/reply/codemodel-v2-968276088d0a6f5e1381.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/.cmake/api/v1/reply/index-2025-04-20T23-06-53-0595.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/additional_project_files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/android_gradle_build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/android_gradle_build_mini.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/build_file_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/configure_fingerprint.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/metadata_generation_command.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/prefab_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/armeabi-v7a/symbol_folder_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/hash_key.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/.cmake/api/v1/query/client-agp/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/.cmake/api/v1/query/client-agp/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/.cmake/api/v1/query/client-agp/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/.cmake/api/v1/reply/cache-v2-2afbd979492ba5c0db20.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/.cmake/api/v1/reply/cmakeFiles-v1-7057312e262dabd46782.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/.cmake/api/v1/reply/codemodel-v2-0594bf686040d7705777.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/.cmake/api/v1/reply/index-2025-04-20T23-07-06-0219.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/CMakeFiles/3.22.1-g37088a8-dirty/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/additional_project_files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/android_gradle_build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/android_gradle_build_mini.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/build_file_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/configure_fingerprint.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/metadata_generation_command.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/prefab_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86/symbol_folder_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/.cmake/api/v1/query/client-agp/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/.cmake/api/v1/query/client-agp/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/.cmake/api/v1/query/client-agp/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/.cmake/api/v1/reply/cache-v2-18260b0a20817beaaec3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/.cmake/api/v1/reply/cmakeFiles-v1-ad47418d7f7232168be6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/.cmake/api/v1/reply/codemodel-v2-7f06c3eddcd0f28f821b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/.cmake/api/v1/reply/index-2025-04-20T23-07-16-0636.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/additional_project_files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/android_gradle_build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/android_gradle_build_mini.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/build_file_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/configure_fingerprint.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/metadata_generation_command.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/prefab_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/6i4e3h25/x86_64/symbol_folder_index.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="почти-финал1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kos3434&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Pineapp1e-pie/Flutter_pr_neoflex.git&quot;,
+    &quot;accountId&quot;: &quot;26e60379-3fb2-4e07-8bca-15c439341e84&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Google/AndroidStudio2024.2/device-explorer/Pixel 2 API 30/_/data/data/com.example.neoflex/databases/users.db-journal" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2vtpXhaN9qqE8NbD8IgElIgGtz5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Flutter.Neoflex.executor": "Run",
+    "Flutter.neoflex.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "Rebasing main",
+    "io.flutter.reload.alreadyRun": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/",
+    "settings.editor.selected.configurable": "dart.settings",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Flutter_pr_neoflex\neoflex\lib\src\settings" />
+      <recent name="D:\Flutter_pr_neoflex\neoflex\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Flutter_pr_neoflex\neoflex\lib\src\screens" />
+      <recent name="D:\Flutter_pr_neoflex\neoflex\assets\images" />
+      <recent name="D:\Flutter_pr_neoflex\neoflex\lib\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="neoflex" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/neoflex/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f6186cb-6b29-4468-92d7-aefeb334f75f" name="Changes" comment="" />
+      <created>1744974266496</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744974266496</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Экран входа , регистрации и сделал экран after_login просто что бы переход после входа куда-то был + картинку робота скачал">
+      <option name="closed" value="true" />
+      <created>1745265818374</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745265818374</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/quiz_articles" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Экран входа , регистрации и сделал экран after_login просто что бы переход после входа куда-то был + картинку робота скачал" />
+    <option name="LAST_COMMIT_MESSAGE" value="Экран входа , регистрации и сделал экран after_login просто что бы переход после входа куда-то был + картинку робота скачал" />
+  </component>
+</project>
