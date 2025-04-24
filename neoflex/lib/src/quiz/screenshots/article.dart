@@ -46,29 +46,7 @@ class ArticleDetailPage extends StatelessWidget {
                   style: const TextStyle(fontSize: 16, height: 1.5),
                 ),
                 const SizedBox(height: 24),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => QuizFormPage(
-                          articleKey: articleKey,
-                          title: title,
-                        ),
-                      ),
-                    );
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromRGBO(204, 37, 91, 1),
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                  ),
-                  child: const Text('Пройти квиз'),
-                ),// Кнопка перехода к квизу
+               // Кнопка перехода к квизу
               ],
             ),
           );

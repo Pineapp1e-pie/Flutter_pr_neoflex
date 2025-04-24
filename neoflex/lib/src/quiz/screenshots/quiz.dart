@@ -7,6 +7,8 @@ import 'package:neoflex/src/quiz/screenshots/article.dart';
 import 'package:neoflex/src/quiz/screenshots/database_helper.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'heart_confetti_page.dart';
+
 class QuizFormPage extends StatefulWidget {
   final String articleKey;
   final String title;
@@ -204,18 +206,7 @@ class _QuizFormPageState extends State<QuizFormPage> {
                     },
                     child: const Text('К статье'),
                   ),
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color.fromRGBO(204, 37, 91, 1),
-                      foregroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
-                      textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),),),
-                    onPressed: () {
-                      Navigator.pop(context);},
-                    child: const Text('На главную'),
-                  ),
+                   HeartOverlayClose(),
                 ],
               ),
               // Картинка
