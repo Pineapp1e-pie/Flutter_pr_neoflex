@@ -58,17 +58,17 @@ class DatabaseHelper {
     // стартовые значения
 
     await db.insert('products', {
-      'name': 'Чехол для телефона от Neoflex',
+      'name': 'Повербанк от Neoflex',
       'description': 'Чиловый повербанк',
       'price': 3,
-      'imagePath': 'assets/img/повербанк.png',
+      'imagePath': 'assets/img/powerbank.png',
       'quantity': 5
     });
     await db.insert('products', {
-      'name': 'Повербанк Neoflex',
+      'name': 'Колонка Neoflex',
       'description': '',
       'price': 5,
-      'imagePath': 'assets/img/колонка.png',
+      'imagePath': 'assets/img/speekers.png',
       'quantity': 3
     });
     await db.insert('products', {
