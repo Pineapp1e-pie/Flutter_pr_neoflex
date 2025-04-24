@@ -41,16 +41,23 @@ class _QuizHomePageState extends State<QuizHomePage> {
   }
     // Статусы пройденных/непройденных квизов, ключ — articleKey
      Map<String, String> _statuses = {};
+
   Future<void> _loadStatuses() async {
     final prefs = await SharedPreferences.getInstance();
-    // Загружаем все сохраненные статусы из SharedPreferences
-    setState(() {
-      _statuses = prefs.getKeys().fold<Map<String, String>>({}, (Map<String, String> map, String key) {
-        map[key] = prefs.getString(key) ?? '';
-        return map;
+    final email = prefs.getString('email');
+    if (email != null) {
+      setState(() {
+        _statuses = prefs.getKeys()
+            .where((key) => key.startsWith(email)) // Только для текущего пользователя
+            .fold<Map<String, String>>({}, (map, key) {
+          final articleKey = key.replaceFirst('${email}_', ''); // Извлекаем чистый articleKey
+          map[articleKey] = prefs.getString(key) ?? '';
+          return map;
+        });
       });
-    });
+    }
   }
+
 
     Color getStatusColor(String articleKey) {
       final status = _statuses[articleKey] ?? '';
@@ -66,8 +73,12 @@ class _QuizHomePageState extends State<QuizHomePage> {
     }
   Future<void> _saveStatusToSharedPreferences(String articleKey, String status) async {
     final prefs = await SharedPreferences.getInstance();
-    prefs.setString(articleKey, status); // Сохраняем статус по ключу articleKey
+    final email = prefs.getString('email');
+    if (email != null) {
+      prefs.setString('${email}_$articleKey', status); // Добавляем email в ключ
+    }
   }
+
 
     @override
     Widget build(BuildContext context) {
