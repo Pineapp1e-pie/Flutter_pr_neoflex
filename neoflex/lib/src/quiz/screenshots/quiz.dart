@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:neoflex/src/quiz/screenshots/main_page.dart';
@@ -21,6 +22,7 @@ class _QuizFormPageState extends State<QuizFormPage> {
   final Map<int, int?> _answers = {};
   String _email ="";
   int? _userId;
+  AudioPlayer _audioPlayer = AudioPlayer();
 
   @override
   void initState() {
@@ -98,10 +100,12 @@ class _QuizFormPageState extends State<QuizFormPage> {
       neoflexImg = "assets/img/sad_robot.png";
       status = "failed";
       addedHearts = -1;
+      _audioPlayer.play(AssetSource('sounds/fail.mp3'), volume: 0.8) ;
     } else {
       textRes = "Был уверен, что не подведешь!";
       neoflexImg = "assets/img/heart_robot.png";
       status = "passed";
+      _audioPlayer.play(AssetSource('sounds/pass.mp3'), volume: 0.8) ;
     }
 
     // Обновим общие очки

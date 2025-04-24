@@ -50,9 +50,9 @@ class _QuizHomePageState extends State<QuizHomePage> {
       final status = _statuses[articleKey] ?? '';
       switch (status) {
         case 'failed':
-          return const Color.fromRGBO(255, 101, 150, 50);
+          return const Color.fromRGBO(255, 101, 150, 0.50);
         case 'passed':
-          return const Color.fromRGBO(83, 228, 119, 50);
+          return const Color.fromRGBO(83, 228, 119, 0.50);
         default:
           return Colors.grey[300]!;
       }
@@ -83,10 +83,7 @@ class _QuizHomePageState extends State<QuizHomePage> {
                         print('Изображение нажато!');
                       },
                     ),
-                    IconButton(
-                      icon: const Icon(Icons.settings, color: Colors.white),
-                      onPressed: () {},
-                    ),
+
                     IconButton(
                       icon: Image.asset(
                         'assets/img/neoflex.png', // Замени на свой путь
@@ -97,10 +94,7 @@ class _QuizHomePageState extends State<QuizHomePage> {
                         print('Изображение нажато!');
                       },
                     ),
-                    IconButton(
-                      icon: const Icon(Icons.card_giftcard, color: Colors.white),
-                      onPressed: () {},
-                    ),
+
                     Stack(
                       clipBehavior: Clip.none,
                       children: [
@@ -126,7 +120,7 @@ class _QuizHomePageState extends State<QuizHomePage> {
 
                             ),
                             child:  Text(
-                              "$heartsCurrent", // TODO getpoints?
+                              "$heartsCurrent",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 10,
@@ -205,19 +199,34 @@ class _QuizHomePageState extends State<QuizHomePage> {
                             ),
                             IconButton(
                               icon: const Icon(Icons.arrow_forward_ios, size: 16),
+
                               onPressed: () {
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
+                                  PageRouteBuilder(
+                                    pageBuilder: (context, animation, secondaryAnimation) =>
                                         ArticleDetailPage(
                                           articleKey: 'article_$index',
-                                          // Передай содержание статьи
-                                          title: title, // Передай заголовок статьи
+                                          title: title,
                                         ),
+                                    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                                      const begin = Offset(1.0, 0.0); // Слева направо
+                                      const end = Offset.zero;
+                                      const curve = Curves.ease;
+
+                                      final tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+                                      final offsetAnimation = animation.drive(tween);
+
+                                      return SlideTransition(
+                                        position: offsetAnimation,
+                                        child: child,
+                                      );
+                                    },
                                   ),
                                 );
                               },
+
+
                             ),
                           ],),
 
