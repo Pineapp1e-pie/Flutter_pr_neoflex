@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:neoflex/src/quiz/screenshots/quiz.dart';
 import 'package:neoflex/src/quiz/screenshots/shop_page.dart';
-import 'package:neoflex/src/quiz/screenshots/database_helper.dart';
+import '../data/database_helper.dart';
 import 'package:shared_preferences/shared_preferences.dart';// путь подставь свой
-
-
-import 'article.dart';
+import 'package:neoflex/src/quiz/screenshots/article.dart';
 
 /// Главная страница теперь StatefulWidget, чтобы хранить текущее количество сердечек и статусы квизов
 class QuizHomePage extends StatefulWidget {

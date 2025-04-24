@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
-import 'database_helper.dart';
+import '../data/database_helper.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -64,7 +64,7 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 const SizedBox(height: 60),
                 Image.asset(
-                  'assets/images/robot.png',
+                  'assets/img/robot.png',
                   height: 360,
                 ),
                 const SizedBox(height: 40),

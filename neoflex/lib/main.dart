@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:neoflex/src/quiz/screenshots/login_screen.dart';
 import 'package:neoflex/src/quiz/screenshots/quiz.dart';
 import 'package:neoflex/src/quiz/screenshots/registration_screen.dart';
-import 'package:neoflex/src/quiz/screenshots/database_helper.dart';
+import 'package:neoflex/src/quiz/data/database_helper.dart';
 import 'package:neoflex/src/quiz/screenshots/main_page.dart';
 
 void main() async {

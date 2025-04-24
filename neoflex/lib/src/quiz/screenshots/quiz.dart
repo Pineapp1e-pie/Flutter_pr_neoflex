@@ -2,9 +2,8 @@ import 'dart:convert';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:neoflex/src/quiz/screenshots/main_page.dart';
 import 'package:neoflex/src/quiz/screenshots/article.dart';
-import 'package:neoflex/src/quiz/screenshots/database_helper.dart';
+import 'package:neoflex/src/quiz/data/database_helper.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'heart_confetti_page.dart';

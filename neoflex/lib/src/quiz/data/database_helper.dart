@@ -1,6 +1,6 @@
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
-import 'package:neoflex/src/quiz/screenshots/product.dart';
+import 'package:neoflex/src/quiz/data/product.dart';
 
 
 class DatabaseHelper {
@@ -56,27 +56,33 @@ class DatabaseHelper {
     ''');
 
     // стартовые значения
-
+    await db.insert('products', {
+      'name': 'Блокнот с ручкой Neoflex.',
+      'description': 'Твои планы на бумаге.',
+      'price': 2,
+      'imagePath': 'assets/img/блокнот_ручка.png',
+      'quantity': 12
+    });
     await db.insert('products', {
       'name': 'Чехол для телефона от Neoflex',
-      'description': 'Чиловый повербанк',
+      'description': 'Чиловй чехол.',
       'price': 3,
-      'imagePath': 'assets/img/повербанк.png',
-      'quantity': 5
+      'imagePath': 'assets/img/чехол.png',
+      'quantity': 9
     });
     await db.insert('products', {
-      'name': 'Повербанк Neoflex',
-      'description': '',
+      'name': 'Термос Neoflex.',
+      'description': 'Горячий настрой в любой момент',
       'price': 5,
+      'imagePath': 'assets/img/термос.png',
+      'quantity': 7
+    });
+    await db.insert('products', {
+      'name': 'Колонка Neoflex.',
+      'description': 'Там, где ты — там музыка.',
+      'price': 8,
       'imagePath': 'assets/img/колонка.png',
       'quantity': 3
-    });
-    await db.insert('products', {
-      'name': 'Термос Neoflex',
-      'description': '',
-      'price': 10,
-      'imagePath': 'assets/img/термоз.png',
-      'quantity': 2
     });
   }
   Future<bool> isUserExists(String email) async {

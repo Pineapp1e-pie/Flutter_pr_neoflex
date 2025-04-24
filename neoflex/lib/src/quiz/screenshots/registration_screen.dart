@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
-
-import 'database_helper.dart';
+import '../data/database_helper.dart';
 
 
 class RegisterScreen extends StatefulWidget {
@@ -59,7 +58,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             children: [
               const SizedBox(height: 60),
               Image.asset(
-                'assets/images/robot.png',
+                'assets/img/robot.png',
                 height: 280,
               ),
               const SizedBox(height: 40),

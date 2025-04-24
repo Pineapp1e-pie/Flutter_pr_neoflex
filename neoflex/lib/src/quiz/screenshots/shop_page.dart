@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:neoflex/src/quiz/screenshots/database_helper.dart';
+import 'package:neoflex/src/quiz/data/database_helper.dart';
 import 'dart:io';
-import 'product.dart';
+import '../data/product.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 
