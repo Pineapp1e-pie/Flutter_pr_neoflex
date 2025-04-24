@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6186cb-6b29-4468-92d7-aefeb334f75f" name="Changes" comment="сделана база данных с товарами и нашей валютой">
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+    <list default="true" id="7f6186cb-6b29-4468-92d7-aefeb334f75f" name="Changes" comment="всё номер у сердечка работает">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/arm64-v8a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/armeabi-v7a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/armeabi-v7a/configure_fingerprint.bin" afterDir="false" />
@@ -14,13 +12,7 @@
       <change beforePath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86_64/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/android/app/.cxx/Debug/k1l2k2gr/x86_64/configure_fingerprint.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/database_helper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/database_helper.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/main_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/quiz.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/quiz.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/shop_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/shop_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/linux/flutter/generated_plugins.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/windows/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/registration_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/neoflex/lib/src/quiz/screenshots/registration_screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +77,7 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;к__н__merge&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;почти-финал&quot;,
     &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/&quot;,
@@ -185,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745412246969</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="всё номер у сердечка работает">
+      <option name="closed" value="true" />
+      <created>1745504852747</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1745504852747</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,7 +232,8 @@
     <MESSAGE value="Всё соеденил и добавил твою злосчастную кнопку" />
     <MESSAGE value="добавлен магазин" />
     <MESSAGE value="сделана база данных с товарами и нашей валютой" />
-    <option name="LAST_COMMIT_MESSAGE" value="сделана база данных с товарами и нашей валютой" />
+    <MESSAGE value="всё номер у сердечка работает" />
+    <option name="LAST_COMMIT_MESSAGE" value="всё номер у сердечка работает" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

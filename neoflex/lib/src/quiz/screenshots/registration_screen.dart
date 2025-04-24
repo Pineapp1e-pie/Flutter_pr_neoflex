@@ -20,17 +20,32 @@ class _RegisterScreenState extends State<RegisterScreen> {
       final formData = _formKey.currentState!.value;
       final email = formData['email'];
       final password = formData['password'];
+      bool userExists = await DatabaseHelper.instance.isUserExists(email);
+      if (userExists) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Пользователь с таким email уже существует')),
+        );
+      } else {
+        try {
+          await DatabaseHelper.instance.insertUser(email, password);
 
-      await DatabaseHelper.instance.insertUser(email, password); // 💾 Сохраняем в БД
+          await DatabaseHelper.instance.insertUser(
+              email, password); // 💾 Сохраняем в БД
 
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Регистрация прошла успешно')),
-      );
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Регистрация прошла успешно')),
+          );
 
-      Navigator.pop(context); // Возврат к экрану входа
+          Navigator.pop(context);
+        } catch (e) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+                content: Text('Пользователь с таким email уже существует')),
+          ); // Возврат к экрану входа
+        }
+      }
     }
   }
-
 
   @override
   Widget build(BuildContext context) {

@@ -12,7 +12,7 @@ class DatabaseHelper {
 
   Future<Database> get database async {
     if (_database != null) return _database!;
-    _database = await _initDB('app.db24');
+    _database = await _initDB('app.db');
     return _database!;
   }
 
@@ -78,6 +78,15 @@ class DatabaseHelper {
       'imagePath': 'assets/img/термоз.png',
       'quantity': 2
     });
+  }
+  Future<bool> isUserExists(String email) async {
+    final db = await instance.database;
+    final result = await db.query(
+      'users',
+      where: 'email = ?',
+      whereArgs: [email],
+    );
+    return result.isNotEmpty;
   }
   Future<void> saveQuizResult(String email, int pointsToAdd) async {
     final db = await instance.database;
@@ -153,7 +162,6 @@ class DatabaseHelper {
   }
   Future<int> insertUser(String email, String password) async {
     final db = await instance.database;
-
     return await db.insert(
       'users',
       {

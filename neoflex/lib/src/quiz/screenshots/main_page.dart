@@ -20,6 +20,7 @@ class _QuizHomePageState extends State<QuizHomePage> {
   void initState() {
     super.initState();
     _loadDataFromDatabase();
+    _loadStatuses();
   }
 
   int heartsCurrent=0;
@@ -41,10 +42,21 @@ class _QuizHomePageState extends State<QuizHomePage> {
     });
   }
     // Статусы пройденных/непройденных квизов, ключ — articleKey
-    final Map<String, String> _statuses = {};
+     Map<String, String> _statuses = {};
+  Future<void> _loadStatuses() async {
+    final prefs = await SharedPreferences.getInstance();
+    // Загружаем все сохраненные статусы из SharedPreferences
+    setState(() {
+      _statuses = prefs.getKeys().fold<Map<String, String>>({}, (Map<String, String> map, String key) {
+        map[key] = prefs.getString(key) ?? '';
+        return map;
+      });
+    });
+  }
 
     Color getStatusColor(String articleKey) {
       final status = _statuses[articleKey] ?? '';
+      _saveStatusToSharedPreferences(articleKey, status);
       switch (status) {
         case 'failed':
           return const Color.fromRGBO(255, 101, 150, 0.50);
@@ -54,6 +66,10 @@ class _QuizHomePageState extends State<QuizHomePage> {
           return Colors.grey[300]!;
       }
     }
+  Future<void> _saveStatusToSharedPreferences(String articleKey, String status) async {
+    final prefs = await SharedPreferences.getInstance();
+    prefs.setString(articleKey, status); // Сохраняем статус по ключу articleKey
+  }
 
     @override
     Widget build(BuildContext context) {
@@ -102,7 +118,6 @@ class _QuizHomePageState extends State<QuizHomePage> {
                                 builder: (context) => const ShopPage(),
                               ),
                             );
-
                             // Обновляем количество сердец, если оно не null
                             if (updatedPoints != null) {
                               setState(() {
@@ -202,7 +217,6 @@ class _QuizHomePageState extends State<QuizHomePage> {
                             ),
                             IconButton(
                               icon: const Icon(Icons.arrow_forward_ios, size: 16),
-
                               onPressed: () {
                                 Navigator.push(
                                   context,
@@ -232,11 +246,9 @@ class _QuizHomePageState extends State<QuizHomePage> {
 
                             ),
                           ],),
-
                         const SizedBox(height: 4),
                         const Divider(thickness: 1),
                         const SizedBox(height: 12),
-
                         // Квиз с кнопкой перехода
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -245,19 +257,17 @@ class _QuizHomePageState extends State<QuizHomePage> {
                               'Квиз',
                               style: TextStyle(fontSize: 16),
                             ),
-
-
                             Container(
                               width: 32,
                               height: 32,
                               decoration: BoxDecoration(
                                 color: getStatusColor('article_$index'),
-
                                 borderRadius: BorderRadius.circular(4),
                               ),
                               child: IconButton(
                                 icon: const Icon(Icons.play_arrow, size: 16),
-                                onPressed: () async {
+                                onPressed: _statuses['article_$index'] == 'passed'
+                                  ? null : () async {
                                   // Запуск квиза и ожидание результата
                                   final result = await Navigator.push<Map<String, dynamic>>(
                                     context,
