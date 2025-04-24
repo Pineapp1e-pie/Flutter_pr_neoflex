@@ -45,6 +45,7 @@ class _ShopPageState extends State<ShopPage> {
   }
 
 
+// В классе _ShopPageState, после покупки или при выходе
   Future<void> _buyItem(Product product) async {
     if (_userPoints >= product.price && product.quantity > 0) {
       final db = DatabaseHelper.instance;
@@ -60,12 +61,17 @@ class _ShopPageState extends State<ShopPage> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text("Вы купили: ${product.name}!")),
       );
+
+      // Возвращаем обновленное количество сердец
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text("Не хватает сердец или товара нет в наличии!")),
       );
     }
   }
+
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -74,6 +80,16 @@ class _ShopPageState extends State<ShopPage> {
         title: Text("Магазин — ❤️ $_userPoints"),
         backgroundColor: Colors.black87,
         foregroundColor: Colors.white,
+    leading: IconButton(
+    icon: Icon(Icons.arrow_back), // Стрелка назад
+    onPressed: () {
+    // Здесь можно выполнить дополнительное действие
+    // Например, показать диалог или выполнить логику
+    Navigator.pop(context, _userPoints); // Ваша дополнительная логика
+
+    // После выполнения действия, вернуться на предыдущий экран
+    },
+      ),
       ),
       body: ListView.builder(
         itemCount: _products.length,

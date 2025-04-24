@@ -30,14 +30,11 @@ class _QuizHomePageState extends State<QuizHomePage> {
     'DevOps',
   ];
 
-  // Текущее число сердечек
   Future<void> _loadDataFromDatabase() async {
     final prefs = await SharedPreferences.getInstance();
-    final user_id = prefs.getString('user_id'); // получаем email
-
-
+    final email = prefs.getString('email'); // получаем email
     final db = DatabaseHelper.instance;
-    int points = await db.getPoints(user_id!); // передаем email в запрос
+    int points = await db.getPoints(email!); // передаем email в запрос
 
     setState(() {
       heartsCurrent = points;
@@ -72,7 +69,6 @@ class _QuizHomePageState extends State<QuizHomePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-
                     IconButton(
                       icon: Image.asset(
                         'assets/img/default.png', // Замени на свой путь
@@ -83,7 +79,6 @@ class _QuizHomePageState extends State<QuizHomePage> {
                         print('Изображение нажато!');
                       },
                     ),
-
                     IconButton(
                       icon: Image.asset(
                         'assets/img/neoflex.png', // Замени на свой путь
@@ -94,20 +89,28 @@ class _QuizHomePageState extends State<QuizHomePage> {
                         print('Изображение нажато!');
                       },
                     ),
-
                     Stack(
                       clipBehavior: Clip.none,
                       children: [
                         IconButton(
                           icon: const Icon(Icons.favorite, color: Colors.white),
                           onPressed: () async {
-                            await Navigator.push(
+                            // Ожидание закрытия ShopPage и получение обновленных сердец
+                            final updatedPoints = await Navigator.push<int>(
                               context,
-                              MaterialPageRoute(builder: (context) => const ShopPage()),
+                              MaterialPageRoute(
+                                builder: (context) => const ShopPage(),
+                              ),
                             );
-                            await _loadDataFromDatabase(); // твой метод, например, который обновляет heartsCurrent
-                            setState(() {}); // чтобы отобразить обновления на экране
+
+                            // Обновляем количество сердец, если оно не null
+                            if (updatedPoints != null) {
+                              setState(() {
+                                heartsCurrent = updatedPoints; // Обновляем количество сердец на текущей странице
+                              });
+                            }
                           },
+
                         ),
                         Positioned(
                           top: 3,

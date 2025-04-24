@@ -58,7 +58,7 @@ class _QuizFormPageState extends State<QuizFormPage> {
       print('No user found for email $_email');
     }
     setState(() {
-      _email =email!;
+      _email =email;
       _userId = users.first['id'];
     });
   }
